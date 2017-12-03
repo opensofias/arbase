@@ -32,3 +32,7 @@ test("values above base", function () {
         arbase.decode("F", 10, { rangeCheck: true })
     }).toThrow("Arbase Error: F out of range");
 });
+
+test("custom seperator", function () {
+    expect(arbase.decode("10!3", 10, { seperator: "!" })).toBe(10.3);
+});

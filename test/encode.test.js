@@ -13,6 +13,10 @@ test("hex", function () {
     expect(arbase.encode(3735928559, 16)).toBe("DEADBEEF");
 });
 
+test("custom seperator", function () {
+    expect(arbase.encode(10.3, 10, { seperator: "!" })).toBe("10!3");
+});
+
 /* Not working
 
 test("negahex", function () {
