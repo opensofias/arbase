@@ -25,3 +25,10 @@ test("base 1.5", function () {
     expect(arbase.decode("10", 1.5)).toBe(1.5);
     expect(arbase.decode("101", 1.5)).toBe(3.25);
 });
+
+test("values above base", function () {
+    expect(arbase.decode("F", 10)).toBe(15);
+    expect(function () {
+        arbase.decode("F", 10, { rangeCheck: true })
+    }).toThrow("Arbase Error: F out of range");
+});
