@@ -1,0 +1,11 @@
+{
+  "name": "Arbase",
+  "description": "Arbitrary base cconverter",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
