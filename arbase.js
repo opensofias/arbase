@@ -69,14 +69,6 @@
         if (!base) base = arbase.defaultBase;
         if (!opt) opt = {};
 
-        function afterSeperator() {
-            if (Math.abs(base) >= 1 && Math.abs(num) < 1)
-                return true;
-            else if (Math.abs(base) < 1 && Math.abs(num) > 1)
-                return true;
-            return false;
-        }
-
         var numOut = '',
             seperatorSet = false,
             seperatorSymbol = opt['seperator']        || arbase.seperator,
