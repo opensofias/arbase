@@ -92,7 +92,7 @@
         while (num > precision || numberOfDigits > 0) {
             if (numberOfDigits <= 0 && !periodPrinted) {
                 periodPrinted = true;
-                numOut += ".";
+                numOut += seperatorSymbol;
             }
             var digitValue = Math.pow(base, numberOfDigits - 1);
             var div = divmod(num, digitValue);
